@@ -2,7 +2,7 @@
 import { Design } from '@freesewing/core'
 // Import parts
 import { body } from './body.mjs'
-
+import { sleeve } from './sleeve.mjs'
 // Create the new design
 const Stede = new Design({
   data: {
@@ -16,7 +16,7 @@ const Stede = new Design({
     name: "Stede",
   },
   // A list of parts is all that is required.
-  parts: [ body  ],
+  parts: [ body, sleeve ],
 })
 
 const Pattern = Stede
@@ -27,5 +27,5 @@ const Pattern = Stede
  * This allows us to re-use these parts in other designs.
  */
 
-export { body, Stede, Pattern }
+export { body, sleeve, Stede, Pattern }
 
