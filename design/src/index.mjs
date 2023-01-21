@@ -7,6 +7,7 @@ import {underarmGusset} from './underarmgusset.mjs'
 import {shoulderPieces} from './shoulderPieces.mjs'
 import {neckGusset} from './neckgusset.mjs'
 import {collar} from './collar.mjs'
+import {slitGusset} from './slitgusset.mjs'
 
 // Create the new design
 const Stede = new Design({
@@ -21,7 +22,7 @@ const Stede = new Design({
     
   },
   // A list of parts is all that is required.
-  parts: [ body, sleeve, underarmGusset, shoulderPieces, neckGusset, collar ],
+  parts: [ body, sleeve, underarmGusset, shoulderPieces, neckGusset, collar, slitGusset ],
 })
 
 const Pattern = Stede
@@ -32,5 +33,5 @@ const Pattern = Stede
  * This allows us to re-use these parts in other designs.
  */
 
-export { body, sleeve, underarmGusset, shoulderPieces, neckGusset, collar, Stede, Pattern }
+export { body, sleeve, underarmGusset, shoulderPieces, neckGusset, collar, slitGusset, Stede, Pattern }
 
