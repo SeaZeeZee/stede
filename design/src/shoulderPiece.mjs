@@ -1,6 +1,6 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
 
-function draftshoulderPieces ({
+function draftshoulderPiece ({
   // Uncomment below to destructure what you need
   /*
    * Content constructors
@@ -92,7 +92,7 @@ function draftshoulderPieces ({
   return part
 }
 
-export const shoulderPieces = {
+export const shoulderPiece = {
   /*
    * name: Holds the name of this part.
    *
@@ -100,7 +100,7 @@ export const shoulderPieces = {
    * design.part to avoid naming conflicts when people re-use
    * parts across designs.
    */
-  name: 'stede.shoulderPieces',
+  name: 'stede.shoulderPiece',
   /*
    * draft: Holds the draft method for this part
    *
@@ -108,7 +108,7 @@ export const shoulderPieces = {
    *
    * Documentation: https://freesewing.dev/reference/api/part/draft
    */
-  draft: draftshoulderPieces,
+  draft: draftshoulderPiece,
   after: [
     /*
      * after: Holds a list of parts that should be drafted prior to this part.
