@@ -4,7 +4,7 @@ import { Design } from '@freesewing/core'
 import { body } from './body.mjs'
 import { sleeve } from './sleeve.mjs'
 import {underarmGusset} from './underarmgusset.mjs'
-import {shoulderPieces} from './shoulderPieces.mjs'
+import {shoulderPiece} from './shoulderPiece.mjs'
 import {neckGusset} from './neckgusset.mjs'
 import {collar} from './collar.mjs'
 import {slitGusset} from './slitgusset.mjs'
@@ -23,7 +23,7 @@ const Stede = new Design({
     
   },
   // A list of parts is all that is required.
-  parts: [ body, sleeve, underarmGusset, shoulderPieces, neckGusset, collar, slitGusset, cuff ],
+  parts: [ body, sleeve, underarmGusset, shoulderPiece, neckGusset, collar, slitGusset, cuff ],
 })
 
 const Pattern = Stede
@@ -34,5 +34,5 @@ const Pattern = Stede
  * This allows us to re-use these parts in other designs.
  */
 
-export { body, sleeve, underarmGusset, shoulderPieces, neckGusset, collar, slitGusset, cuff, Stede, Pattern }
+export { body, sleeve, underarmGusset, shoulderPiece, neckGusset, collar, slitGusset, cuff, Stede, Pattern }
 
