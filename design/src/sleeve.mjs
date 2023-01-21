@@ -92,7 +92,7 @@ function draftSleeve ({
   return part
 }
 
-export const body = {
+export const sleeve = {
   /*
    * name: Holds the name of this part.
    *
